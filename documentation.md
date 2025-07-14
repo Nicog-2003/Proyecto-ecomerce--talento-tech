@@ -51,4 +51,4 @@ jsx(JavaScript XML)
 SweetAlert para los iconos de logeo y agregado al carrito
 boostrap para darle estilo a la app.
 rutas protegidas para el logeo y registro de usuario
-Moockapi para la cantidad de los productos.
+Moockapi para la cantidad de los productos. 
