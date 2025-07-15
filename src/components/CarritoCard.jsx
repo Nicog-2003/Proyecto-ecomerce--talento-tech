@@ -31,7 +31,7 @@ function CarritoCardBootstrap({ producto, funcionDisparadora }) {
             </Col>
             <Col md={2}>
                 <Button variant="dark" onClick={borrarDelCarrito}>
-                X
+                <i class="bi bi-trash3"></i>
                 </Button>
             </Col>
             </Row>

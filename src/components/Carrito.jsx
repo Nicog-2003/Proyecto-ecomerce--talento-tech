@@ -6,6 +6,7 @@ import { Button, Container } from "react-bootstrap";
 import { CarritoContext } from "../contexts/CarritoContext";
 import CarritoCardBootstrap from "./CarritoCard.jsx";
 import Row from 'react-bootstrap/Row';
+
 function CarritoBootstrap() {
     const { user } = useAuthContext(); // ✅ más limpio
     const { productosCarrito, vaciarCarrito, borrarProductoCarrito } = useContext(CarritoContext);
@@ -31,7 +32,7 @@ function CarritoBootstrap() {
         <Container className="my-4">
             <h2 className="mb-3">Carrito de compras</h2>
             <Button variant="warning" className="mb-4" onClick={funcionDisparadora2}>
-                Vaciar carrito
+               <i class="bi bi-trash3"></i>  Vaciar carrito
             </Button>
             
           <Row xs={1} md={1} lg={1}>

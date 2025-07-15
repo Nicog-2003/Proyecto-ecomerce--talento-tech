@@ -4,6 +4,8 @@ import { Navbar, Nav, Container, Badge } from "react-bootstrap";
 import { CarritoContext } from "../contexts/CarritoContext";
 import { useAuthContext } from "../contexts/AuthContext";
 import { FaShoppingCart } from "react-icons/fa";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 function NavBoostrap() {
   const { productosCarrito } = useContext(CarritoContext);
@@ -18,10 +20,10 @@ function NavBoostrap() {
         <Navbar.Toggle aria-controls="nav-principal" />
         <Navbar.Collapse id="nav-principal">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/">Inicio</Nav.Link>
-            <Nav.Link as={Link} to="/productos">Productos</Nav.Link>
-            <Nav.Link as={Link} to="/nosotros">Nosotros</Nav.Link>
-            <Nav.Link as={Link} to="/contacto">Contacto</Nav.Link>
+            <Nav.Link as={Link} to="/"> <i class="bi bi-house-fill"></i> Inicio</Nav.Link>
+            <Nav.Link as={Link} to="/productos" >  <i class="bi bi-shop"></i> Productos </Nav.Link>
+            <Nav.Link as={Link} to="/nosotros"> <i class="bi bi-person-arms-up"></i> Nosotros</Nav.Link>
+            <Nav.Link as={Link} to="/contacto">  <i class="bi bi-telephone"></i> Contacto </Nav.Link>
             {admin && <Nav.Link as={Link} to="/admin">Admin</Nav.Link>}
             {admin && <Nav.Link as={Link} to="/admin/agregarProductos">Agregar productos</Nav.Link>}
           </Nav>
@@ -32,12 +34,14 @@ function NavBoostrap() {
                 <Badge bg="light" text="dark">{productosCarrito.length}</Badge>
               )}
             </Nav.Link>
-            <Nav.Link as={Link} to="/login">Login</Nav.Link>
+            <Nav.Link as={Link} to="/login"> <i class="bi bi-power"></i>  Login</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
+  
 }
+
 
 export default NavBoostrap;

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 
+
 function Nav2() {  
     return (  
         <nav style={{ backgroundColor: "#333", color: "white", padding: "10px" }}>  
